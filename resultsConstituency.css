@@ -1,0 +1,35 @@
+p
+{
+
+  font-size: 60px;
+  transform: scale(1.00, 1.5);
+  position: relative;
+  left:360px;
+  top:-20px;
+  font-family: Arial Narrow, sans-serif ;
+  color:black;
+
+}
+
+
+#resultsConstTable
+{
+  border: solid 2px black;
+  padding: 10px;
+  position: relative;
+  top:-20px;
+  left:350px;
+}
+
+th,td
+{
+  padding: 10px;
+  border: solid 0.5px black;
+}
+#linkBack
+{
+  position: relative;
+  top:300px;
+  left:620px;
+
+}

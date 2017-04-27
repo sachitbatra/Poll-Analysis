@@ -1,0 +1,74 @@
+body
+{
+  background: url("4787.jpg");
+}
+
+.inpB
+{
+  border: solid 2px White;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background:black;
+  color: seagreen;
+  font-size: 15px;
+}
+
+#votesCountNational
+{
+  position: relative;
+  left:200px;
+  top:50px;
+}
+
+#votesCountState
+{
+  position: relative;
+  left:400px;
+  top:50px;
+}
+
+#head
+{
+  transform: scale(1.00, 1.5);
+  position: relative;
+  left:610px;
+  top:070px;
+  font-size: 50px;
+  font-family: Arial Narrow, sans-serif ;
+  color:white;
+}
+#votesCountDistrict
+{
+  position: relative;
+  left:600px;
+  top:50px;
+}
+
+#votesCountConst
+{
+  position: relative;
+  left:200px;
+  top:70px;
+}
+
+#constWinner
+{
+  position: relative;
+  left: 400px;
+  top:70px;
+}
+
+#elecWinner
+{
+  position: relative;
+  left:600px;
+  top:70px;
+}
+
+.inpB :hover
+{
+  background: seagreen;
+  color: black;
+}

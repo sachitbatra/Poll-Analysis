@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title> Election Commission of India </title>
+
+<head>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="font-awesome/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+<p id="mainHeading"> UPDATE </p>
+<p id="voterHead"> VOTER </p>
+<div id="voterReg">
+  <form id="voterForm" method="get" action="voterUpd.php">
+    <pre><i class="fa fa-user-circle"></i> <input type="number" name="voterid"  class="inp" placeholder="Enter Your Voter ID"> </input></pre>
+    <pre><i class="fa fa-user-circle"></i> <input type="text" name="name"  class="inp" placeholder="Enter Your Name" id="voterName"> </input></pre>
+    <pre><i class="fa fa-male" aria-hidden="true"></i> <input type="text" name="gender" id="gender" class="inp" placeholder="M/F"> </pre>
+
+    <pre><i class="fa fa-home" aria-hidden="true"></i>
+    <select  class="inp" type="text" placeholder="Enter your Constituency ID" id="constID" name="conID">
+        <?php
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+
+        $connector = mysql_connect($host,$username,$password);
+        $selected = mysql_select_db("elecanalysis", $connector);
+
+        $sql = "SELECT constituency_id FROM constituency";
+        $result = mysql_query($sql);
+
+        while ($row=mysql_fetch_assoc($result))
+        {
+            $title=$row['constituency_id'];
+            echo "<option>$title</option>";
+        }
+        ?>
+    </select>
+    </pre>
+
+    <pre><i class="fa fa-clock-o" aria-hidden="true"></i> <input type="date" class="inp"  placeholder="Enter Your Date OF Birth" id="dob" name="dob"> </input></pre>
+  <input class="inp" type="Submit" id="sub"> </submit>
+  </form>
+</div>
+
+  <pre id="linkBack"><i class="fa fa-home" aria-hidden="true"></i><a  href="landingPage.html"> Home Page </a></pre>
+
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body
+{
+  background: url("back3.jpg") no-repeat;
+  background-size: cover;
+
+}
+#headLine1
+{
+  font-weight: lighter;
+  font-size: 80px;
+  transform: scale(1.00, 1.5);
+  position: relative;
+  left:140px;
+  top:70px;
+  font-family: Arial Narrow, sans-serif ;
+  color:white;
+}
+
+#headLine2
+{
+  font-weight: lighter;
+  font-size: 70px;
+  transform: scale(1.1, 1.5);
+  position: relative;
+  left:190px;
+  top:60px;
+  font-family: Arial Narrow, sans-serif ;
+  color:white;
+}
+
+.Button
+{
+  border: solid 1.5px black;
+  font-family: Arial Narrow, sans-serif;
+  padding:10px;
+
+  background: none;
+  font-size: 25px;
+  color: seagreen;
+  transform: scale(1.1,1.1);
+
+  position: relative;
+  top:150px;
+
+}
+
+#registerButton
+{
+  border-top: none;
+  border-bottom:  none;
+  border-left: none;
+  left:450px;
+  padding-right: 40px;
+}
+
+#voteButton
+{
+  border:none;
+  left: 480px;
+}
+
+#resultsButton
+{
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  left:520px;
+  padding-left: 40px;
+
+}
+
+.Button:hover
+{
+  font-size:30px;
+  color:black;
+}

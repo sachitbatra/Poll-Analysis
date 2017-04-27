@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title> Election Commission of India </title>
+<head>
+    <link rel="stylesheet" href="landingPage.css">
+
+
+</head>
+
+<body>
+  <p id="headLine1"> Election Commission Of India </p>
+  <p id="headLine2"> "For The People By the People" </p>
+
+  <input type="button" value="Register" id="registerButton" class="Button"></input>
+  <input type="button" value="Vote" id="voteButton" class="Button"></input>
+  <input type="button" value="Results" id="resultsButton" class="Button"></input>
+
+</body>
+<script>
+var b=document.querySelectorAll(".Button");
+
+document.getElementById("registerButton").addEventListener("click",register,false);
+document.getElementById("voteButton").addEventListener("click",vote,false);
+document.getElementById("resultsButton").addEventListener("click",results,false);
+
+function register()
+{
+  window.location="register.html";
+}
+
+function vote()
+{
+  window.location="vote.html";
+}
+
+function results()
+{
+  window.location="results.html";
+}
+
+
+</script>
+</html>
